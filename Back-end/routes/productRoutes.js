@@ -22,8 +22,7 @@ productRouter.get("/getall", getAll);
 productRouter.get("/getNumber", getNumber);
 productRouter.get("/getLastEight", getLastEight);
 productRouter.post("/search", searchProduct);
-productRouter.get("/bycategory/:categoryID", getByCategory);
-productRouter.get("/bysubcategory/:subCategoryID", getBySubCategory);
+
 
 productRouter.get("/all-data", getAllNoPagination);
 productRouter.patch("/:id", upload.array("image", 5), updateProduct);
